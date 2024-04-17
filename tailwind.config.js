@@ -15,8 +15,12 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
-    },
+    },  
     extend: {
+      
+    screens:{ 
+      xs:"540px"
+    },
       colors: {
         "yellowish":"#febd69",
         border: "hsl(var(--border))",

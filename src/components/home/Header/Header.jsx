@@ -30,9 +30,7 @@ const Header = () => {
         <Navbar />  
       {mobileNav && (
         <div
-          className={`fixed top-0 lg:hidden  ${
-            mobileNav ? "left-0" : "left-[-100%]"
-          } z-50 w-[250px] bg-[#131921] h-[100vh] overflow-y-auto transition-all ease-in duration-300`}
+          className={`w-full h-full transition-all ease-in duration-300`}
         >
           <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
         </div>
