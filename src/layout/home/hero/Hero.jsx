@@ -1,37 +1,42 @@
 import { CarouselDemo } from "./Carousel";
 
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
 } from "@/components/ui/card";
+
+// imges 
+import laptop from "@/assets/images/hero-images/grid-img-1.webp"
+import ipad from "@/assets/images/hero-images/grid-img-2.webp"
+import watch from "@/assets/images/hero-images/grid-img-3.webp"
+import headphone from "@/assets/images/hero-images/grid-img-4.webp"
 const Hero = () => {
 
   const gridData = [
     {
       id: 1,
-      img:"https://demo-digitic.myshopify.com/cdn/shop/files/catbanner-01.jpg?v=1655701506",
+      img:laptop,
       title: "Best Sale",
       productName: "Laptop Max",
       Price: "From $1699.00 or $64.62/mo.",
     },
     {
       id: 2,
-      img:"https://demo-digitic.myshopify.com/cdn/shop/files/catbanner-03.jpg?v=1654859212",
+      img:ipad,
       title: "New Arrival",
       productName: "Buy Ipad Air",
       Price: "From $599.00 or $49.91/mo.",
     },
     {
       id: 3,
-      img:"https://demo-digitic.myshopify.com/cdn/shop/files/catbanner-02.jpg?v=1654859195",
+      img:watch,
       title: "15% Off",
       productName: "Smartwatch 7",
       Price: "Shop the latest brand styles and color.",
     },
     {
       id: 4,
-      img:"https://demo-digitic.myshopify.com/cdn/shop/files/catbanner-04.jpg?v=1654859228",
+      img:headphone,
       title: "Free Engraving",
       productName: "AirPods Max",
       Price: "High-fidelity playback & ultra-low destortion.",

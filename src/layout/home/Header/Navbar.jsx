@@ -10,6 +10,7 @@ import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import SeacrchBox from "@/components/SeacrchBox";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [rotate, setRotate] = useState(false);
   return (
@@ -20,8 +21,8 @@ const Navbar = () => {
         </div>
         <div className="lg:flex hidden justify-center items-center gap-8">
           {NavbarData.map((item) => (
-            <a
-              href={"#"}
+            <Link
+              to={item.link}
               className={`text-white text-[14px] uppercase text-[600] font-medium font-sans ${
                 item.dropdwown
                   ? "relative w-[18rem] after:w-[1px] after:opacity-20 after:h-full after:bg-white after:absolute after:top-0 after:right-0"
@@ -31,7 +32,7 @@ const Navbar = () => {
             >
               {!item.dropdwown && item.title}
               {item.dropdwown && (
-                <DropdownMenu className="relative w-full lg:flex hidden">
+                <DropdownMenu className="relative w-full lg:flex hidden hover:bg-transparent">
                   <DropdownMenuTrigger asChild>
                     <Button
                       className=" text-[14px] uppercase text-[600] font-sans  gap-1 p-0 w-full flex justify-between"
@@ -103,8 +104,8 @@ const Navbar = () => {
                             className="bg-none focus:bg-transparent w-full h-12 border-b border-white/[0.12] dark:border-black/[0.12] rounded-none p-0"
                             key={index}
                           >
-                            <a
-                              href="#"
+                            <Link
+                              to={item.link}
                               onMouseEnter={() =>
                                 item.popuUp && setRotate(true)
                               }
@@ -127,14 +128,14 @@ const Navbar = () => {
                                   />
                                 </span>
                               )}
-                            </a>
+                            </Link>
                           </DropdownMenuItem>
                         );
                       })}
                   </DropdownMenuContent>
                 </DropdownMenu>
               )}
-            </a>
+            </Link>
           ))}
         </div>
         <ThemeSwitcher />
