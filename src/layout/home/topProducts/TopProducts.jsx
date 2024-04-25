@@ -5,17 +5,8 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { TopProductsData } from "@/constants/constants";
-import { useEffect, useState } from "react";
 
-export function TopProducts() {
-  const [theme, setTheme] = useState(localStorage.getItem("vite-ui-theme")); // Set default theme if not in localStorage
-
-
-  // const getImageSrc = (item) => {
-  //   const theme = localStorage.getItem("vite-ui-theme") || "light";
-  //   const imageSrc = theme === "light" ? item.image_light_mode : item.image_dark_mode;
-  //   return `${imageSrc}?v=${Math.random()}`; // Add random query string
-  // };
+export default function TopProducts() {
 
   return (
     <div className="my-8">

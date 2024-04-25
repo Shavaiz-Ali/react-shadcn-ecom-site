@@ -18,7 +18,6 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { BsStarFill,BsStarHalf, BsEye , BsHeart} from "react-icons/bs";
 import { IoLockClosedOutline } from "react-icons/io5";
 import { HiMiniArrowPath } from "react-icons/hi2";
-import {useState } from "react";
 const FeaturedCarousel = () => {
   return (
     <div className="w-full flex flex-col items-start gap-y-4 mt-4">

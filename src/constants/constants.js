@@ -1,3 +1,4 @@
+
 // whychooseus section  images
 import icon_1 from "@/assets/images/why-choose-us-icons/shipping.png";
 import icon_2 from "@/assets/images/why-choose-us-icons/gifts.png";
@@ -42,7 +43,6 @@ import banner_dark_mode_1 from "@/assets/images/banner-images/banner-dark-mode-2
 import banner_dark_mode_2 from "@/assets/images/banner-images/banner-dark-mode-1.png";
 import banner_dark_mode_3 from "@/assets/images/banner-images/banner-dark-mode-3.png";
 import banner_dark_mode_4 from "@/assets/images/banner-images/banner-dark-mode-4.png";
-
 export const NavbarData = [
   {
     id: 1,
